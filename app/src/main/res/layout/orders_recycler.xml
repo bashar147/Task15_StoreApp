@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/semi_white"
+    android:layout_marginBottom="15dp"
+    android:id="@+id/parentRelativeLayout"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/clearsans_regular"
+        android:text="Order details"
+        android:textColor="@color/blue"
+        android:layout_marginStart="3dp"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/deleteTExt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="delete"
+        android:textColor="@color/red"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/deleteTExt"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="5dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/orderProducteditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:backgroundTint="@color/red"
+                android:hint="15 Product"
+                android:enabled="false"
+                android:editable="false"
+                android:paddingVertical="15dp"
+                android:paddingStart="15dp"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/blue"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/orderPriceEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:backgroundTint="@color/red"
+                android:hint="Total Price = 200 JD"
+                android:paddingVertical="15dp"
+                android:paddingStart="8dp"
+                android:enabled="false"
+                android:editable="false"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/blue"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/orderCcompleteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:hint="Completed"
+                android:paddingVertical="15dp"
+                android:textColor="@color/blue"
+                android:enabled="false"
+                android:editable="false"
+                android:textColorHint="@color/blue"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

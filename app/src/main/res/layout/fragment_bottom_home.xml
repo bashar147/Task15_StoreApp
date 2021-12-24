@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.BottomNavFragments.BottomHomeFragment"
+    android:background="@color/semi_white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/list" />
+
+
+        <ImageButton
+            android:id="@+id/bottomFragShopIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/shopping_cart"
+            android:gravity="end" />
+
+        <TextView
+            android:id="@+id/shopText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bottomFragShopIcon"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/clearsans_bold"
+            android:text="SHOP FOR \nEVERY ONE"
+            android:textColor="@color/blue"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/homeSearchView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/shopText"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="80dp"
+            android:background="@drawable/search_background"
+            android:hint="Search"
+            android:textColorHint="@color/red"
+            android:textAlignment="textStart"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_baseline_search_24"
+            android:textColor="@color/red"
+            />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/homePage_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/homeSearchView"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/red"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/red"
+            app:tabTextColor="@color/blue">
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/homePage_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/homePage_tab_layout"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/homePageRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/homePage_pager"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp" />
+
+        <TextView
+            android:id="@+id/seeMoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/blue"
+            android:text="See More"
+            android:fontFamily="@font/clearsans_medium"
+            android:layout_below="@id/homePageRecyclerView"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            />
+
+        <ImageView
+            android:id="@+id/arrowImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/seeMoreText"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_arrow_arrow" />
+    </RelativeLayout>
+
+</ScrollView>

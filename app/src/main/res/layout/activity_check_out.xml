@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CheckOutActivity"
+    android:background="@color/semi_white"
+    android:layout_marginStart="40dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <LinearLayout
+        android:id="@+id/LLLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        >
+        <ImageView
+            android:id="@+id/checkOutClickBackcheck"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_arrow_arrow"
+            android:rotation="180"
+            />
+        <TextView
+            android:id="@+id/checkOutClickTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check Out"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            />
+
+
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/tetetetet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:textSize="22sp"
+            android:text="Delivery"
+            android:layout_below="@id/LLLL"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rrrrrr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tetetetet"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/clearsans_regular"
+                android:text="Address details"
+                android:textColor="@color/blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/changeTExt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:text="change"
+                android:textColor="@color/red"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/changeTExt"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="10dp"
+               >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <EditText
+                        android:id="@+id/checkOutNameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:backgroundTint="@color/red"
+                        android:hint="Bashar Obaidat"
+                        android:paddingVertical="15dp"
+                        android:paddingStart="15dp"
+                        android:enabled="false"
+                        android:textColor="@color/blue"
+                        android:textColorHint="@color/blue"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/checkOutDistanceEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:backgroundTint="@color/red"
+                        android:hint="Km 5 refinery road oppsite re\npublic road, effurun, delta state"
+                        android:paddingVertical="15dp"
+                        android:paddingStart="8dp"
+                        android:textColor="@color/blue"
+                        android:enabled="false"
+                        android:textColorHint="@color/blue"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/checOutPhoneEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:hint="+962795547349"
+                        android:paddingVertical="15dp"
+                        android:textColor="@color/blue"
+                        android:enabled="false"
+                        android:textColorHint="@color/blue"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ttttttttt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery method."
+            android:layout_below="@id/rrrrrr"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/radioLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ttttttttt"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <RadioButton
+                        android:id="@+id/doorRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioButton
+                        android:id="@+id/pickUpRadioBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/doorDeleveryCheclBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:backgroundTint="@color/red"
+                        android:editable="false"
+                        android:enabled="false"
+                        android:paddingVertical="15dp"
+                        android:paddingStart="8dp"
+                        android:text="Door delivery"
+                        android:textColor="@color/blue"
+                        android:textColorHint="@color/blue"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Pic Up"
+                        android:textColor="@color/blue"
+                        android:paddingStart="8dp"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="TOTAL"
+            android:layout_below="@id/radioLayout"
+            android:layout_marginTop="40dp"
+            />
+
+        <TextView
+            android:id="@+id/checkoutTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioLayout"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:text="200 JD"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/checkOutProceed_to_payment"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Proceed to payment"
+            android:layout_below="@+id/checkoutTotal"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:background="@drawable/splash_btn_background"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            />
+
+    </RelativeLayout>
+</ScrollView>
+

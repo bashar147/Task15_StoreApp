@@ -1,0 +1,30 @@
+package com.example.task15.Classes;
+
+public class SliderItem {
+    int url ;
+    String imageUrl;
+
+    public SliderItem(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
+    public SliderItem(int url) {
+        this.url = url;
+    }
+
+    public int getUrl() {
+        return url;
+    }
+
+    public void setUrl(int url) {
+        this.url = url;
+    }
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:layout_height="170dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginEnd="20dp"
+    app:cardCornerRadius="12dp">
+
+    <ImageView
+        android:id="@+id/home_reycler_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/womanitems1"
+        android:scaleType="centerCrop"
+        />
+
+</androidx.cardview.widget.CardView>
